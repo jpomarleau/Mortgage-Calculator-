@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Mortgage Calculator</h1>
+        <label>Loan Amount ($): <input type="number" id="loanAmount"></label>
+        <label>Interest Rate (%): <input type="number" id="interestRate"></label>
+        <label>Loan Term (Years): <input type="number" id="loanTerm"></label>
+        <button onclick="calculateMortgage()">Calculate</button>
+        <h2 id="monthlyPayment">Monthly Payment: $0.00</h2>
+        <canvas id="amortizationChart"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
